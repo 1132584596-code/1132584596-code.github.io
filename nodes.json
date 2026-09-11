@@ -1,0 +1,298 @@
+[
+  {
+    "id": "D-01",
+    "name": "横1 · 待营业",
+    "figma": "494:41",
+    "stage": "start",
+    "group": "画面与阶段",
+    "description": "横1 · 待营业"
+  },
+  {
+    "id": "D-02",
+    "name": "横2 · 店铺全景",
+    "figma": "494:68",
+    "stage": "open",
+    "group": "画面与阶段",
+    "description": "横2 · 店铺全景"
+  },
+  {
+    "id": "D-03",
+    "name": "横3 · 作品浏览",
+    "figma": "494:70",
+    "stage": "browse",
+    "group": "画面与阶段",
+    "description": "横3 · 作品浏览"
+  },
+  {
+    "id": "D-04",
+    "name": "横4 · 感谢观看",
+    "figma": "497:254",
+    "stage": "closed",
+    "group": "画面与阶段",
+    "description": "横4 · 感谢观看"
+  },
+  {
+    "id": "D-P1",
+    "name": "天猫618 · 预览",
+    "figma": "494:178",
+    "stage": "card-1",
+    "group": "作品卡片",
+    "description": "点击一次连续放大展开；手动滑动后吸附"
+  },
+  {
+    "id": "D-R1",
+    "name": "天猫618 · 正文",
+    "figma": null,
+    "stage": "project-1",
+    "group": "作品阅读",
+    "description": "默认占满网页阅读；左边缘拉伸键可展开或拖动卡片栏。双击正文返回卡片。"
+  },
+  {
+    "id": "D-P2",
+    "name": "滴滴春日出行计划 · 预览",
+    "figma": "494:45",
+    "stage": "card-2",
+    "group": "作品卡片",
+    "description": "点击一次连续放大展开；手动滑动后吸附"
+  },
+  {
+    "id": "D-R2",
+    "name": "滴滴春日出行计划 · 正文",
+    "figma": null,
+    "stage": "project-2",
+    "group": "作品阅读",
+    "description": "默认占满网页阅读；左边缘拉伸键可展开或拖动卡片栏。双击正文返回卡片。"
+  },
+  {
+    "id": "D-P3",
+    "name": "啡趣不可 · 预览",
+    "figma": "494:47",
+    "stage": "card-3",
+    "group": "作品卡片",
+    "description": "点击一次连续放大展开；手动滑动后吸附"
+  },
+  {
+    "id": "D-R3",
+    "name": "啡趣不可 · 正文",
+    "figma": null,
+    "stage": "project-3",
+    "group": "作品阅读",
+    "description": "默认占满网页阅读；左边缘拉伸键可展开或拖动卡片栏。双击正文返回卡片。"
+  },
+  {
+    "id": "D-P4",
+    "name": "Halliday · 预览",
+    "figma": "494:55",
+    "stage": "card-4",
+    "group": "作品卡片",
+    "description": "点击一次连续放大展开；手动滑动后吸附"
+  },
+  {
+    "id": "D-R4",
+    "name": "Halliday · 正文",
+    "figma": null,
+    "stage": "project-4",
+    "group": "作品阅读",
+    "description": "默认占满网页阅读；左边缘拉伸键可展开或拖动卡片栏。双击正文返回卡片。"
+  },
+  {
+    "id": "M-01",
+    "name": "竖1 · 待营业",
+    "figma": "494:59",
+    "stage": "start",
+    "group": "画面与阶段",
+    "description": "竖1 · 待营业"
+  },
+  {
+    "id": "M-02",
+    "name": "竖2 · 店铺全景",
+    "figma": "494:61",
+    "stage": "open",
+    "group": "画面与阶段",
+    "description": "竖2 · 店铺全景"
+  },
+  {
+    "id": "M-03",
+    "name": "竖3 · 镜头推进",
+    "figma": "494:80",
+    "stage": "push",
+    "group": "画面与阶段",
+    "description": "竖3 · 镜头推进"
+  },
+  {
+    "id": "M-04",
+    "name": "竖4 · 模糊背景与卡片",
+    "figma": "494:83",
+    "stage": "browse",
+    "group": "画面与阶段",
+    "description": "竖3无立牌高清图与竖4无立牌模糊图950ms渐变过渡。"
+  },
+  {
+    "id": "M-05",
+    "name": "竖5 · 感谢观看",
+    "figma": "497:257",
+    "stage": "closed",
+    "group": "画面与阶段",
+    "description": "竖5 · 感谢观看"
+  },
+  {
+    "id": "M-P1",
+    "name": "天猫618 · 预览",
+    "figma": "494:193",
+    "stage": "card-1",
+    "group": "作品卡片",
+    "description": "点击一次连续放大展开；手动滑动后吸附"
+  },
+  {
+    "id": "M-R1",
+    "name": "天猫618 · 正文",
+    "figma": null,
+    "stage": "project-1",
+    "group": "作品阅读",
+    "description": "原始PDF全部内容；阅读区独立滚动，返回后恢复卡片"
+  },
+  {
+    "id": "M-P2",
+    "name": "滴滴春日出行计划 · 预览",
+    "figma": "494:135",
+    "stage": "card-2",
+    "group": "作品卡片",
+    "description": "点击一次连续放大展开；手动滑动后吸附"
+  },
+  {
+    "id": "M-R2",
+    "name": "滴滴春日出行计划 · 正文",
+    "figma": null,
+    "stage": "project-2",
+    "group": "作品阅读",
+    "description": "原始PDF全部内容；阅读区独立滚动，返回后恢复卡片"
+  },
+  {
+    "id": "M-P3",
+    "name": "啡趣不可 · 预览",
+    "figma": "494:136",
+    "stage": "card-3",
+    "group": "作品卡片",
+    "description": "点击一次连续放大展开；手动滑动后吸附"
+  },
+  {
+    "id": "M-R3",
+    "name": "啡趣不可 · 正文",
+    "figma": null,
+    "stage": "project-3",
+    "group": "作品阅读",
+    "description": "原始PDF全部内容；阅读区独立滚动，返回后恢复卡片"
+  },
+  {
+    "id": "M-P4",
+    "name": "Halliday · 预览",
+    "figma": "494:159",
+    "stage": "card-4",
+    "group": "作品卡片",
+    "description": "点击一次连续放大展开；手动滑动后吸附"
+  },
+  {
+    "id": "M-R4",
+    "name": "Halliday · 正文",
+    "figma": null,
+    "stage": "project-4",
+    "group": "作品阅读",
+    "description": "原始PDF全部内容；阅读区独立滚动，返回后恢复卡片"
+  },
+  {
+    "id": "UI-01",
+    "name": "返回",
+    "figma": "497:221",
+    "stage": "project-1",
+    "group": "通用控件",
+    "description": "返回"
+  },
+  {
+    "id": "UI-02",
+    "name": "音乐开／关",
+    "figma": "497:261 / 497:275",
+    "stage": "browse",
+    "group": "通用控件",
+    "description": "音乐开／关"
+  },
+  {
+    "id": "UI-03",
+    "name": "滑动条",
+    "figma": "497:253",
+    "stage": "project-1",
+    "group": "通用控件",
+    "description": "滑动条"
+  },
+  {
+    "id": "UI-04",
+    "name": "如何找到我？",
+    "figma": null,
+    "stage": "closed",
+    "group": "通用控件",
+    "description": "仅感谢观看关门阶段出现：关门2秒后渐显，结束时完全显示。弹窗用返回图标退出。"
+  },
+  {
+    "id": "M-UI-05",
+    "name": "竖版卡片页返回",
+    "description": "左返回、中间作品展示、右项目计数；返回店铺主页面。",
+    "figma": "497:221",
+    "stage": "browse",
+    "group": "通用控件"
+  },
+  {
+    "id": "D-UI-05",
+    "name": "横版左侧栏返回",
+    "description": "左返回、中间作品展示、右项目计数；返回店铺主页面。",
+    "figma": "497:221",
+    "stage": "browse",
+    "group": "通用控件"
+  },
+  {
+    "id": "UI-06",
+    "name": "查看简历",
+    "stage": "closed",
+    "description": "仅感谢观看关门阶段出现：关门2秒后渐显，结束时完全显示。弹窗用返回图标退出。",
+    "group": "通用控件",
+    "figma": null
+  },
+  {
+    "id": "D-UI-07",
+    "name": "拉伸作品栏",
+    "stage": "project-1",
+    "description": "使用提供的侧栏展开/收起PNG，520ms平滑伸缩，保持当前段落阅读位置。",
+    "group": "通用控件",
+    "figma": null
+  },
+  {
+    "id": "UI-08",
+    "name": "图标与点击区域",
+    "stage": "browse",
+    "description": "操作图标桌面32、手机36 CSS像素；按钮点击区域至少44×44。",
+    "group": "通用控件",
+    "figma": null
+  },
+  {
+    "id": "UI-09",
+    "name": "双击返回",
+    "stage": "project-1",
+    "description": "保留双击返回操作，去掉文字提示；卡片页恢复滑动探索·点击展开。",
+    "group": "通用控件",
+    "figma": null
+  },
+  {
+    "id": "UI-10",
+    "name": "透明立牌分层",
+    "stage": "start",
+    "description": "高清无立牌PNG开闭门分层；使用独立透明立牌，无手工轮廓。",
+    "group": "通用控件",
+    "figma": null
+  },
+  {
+    "id": "UI-11",
+    "name": "返回观看／即刻歇业",
+    "description": "返回店铺后左右两个操作，3秒无操作自动关门。",
+    "group": "通用控件",
+    "stage": "home",
+    "figma": null
+  }
+]

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#e9ecef"><meta name="description" content="代睿的设计作品集：天猫618、滴滴春日出行计划、啡趣不可与 Halliday。">
+<title>代睿 Derry · 作品集</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main id="app" data-state="loading">
+ <div id="scene" aria-hidden="true"><div id="world"><div id="camera">
+  <img id="open-art" class="scene-art" alt="">
+  <div id="shutter-mask"><div id="shutter-panel"><img id="shutter-clean" class="scene-art" alt=""><img id="shutter-art" class="scene-art" alt=""><img id="thanks-art" class="scene-art" alt="" hidden></div></div>
+  <img id="shell-art" class="scene-art" alt="">
+  <img id="rest-art" class="scene-art" alt="">
+  <div id="foreground"><img id="stand-art" alt=""><img id="stand-qr" src="assets/qr-original.jpg" alt=""></div>
+  <button id="opening-sign" tabindex="-1" aria-hidden="true"></button>
+ </div><img id="closeup-art" class="scene-art" src="assets/mobile-closeup-clean.png" alt=""><img id="desktop-closeup-art" class="scene-art" src="assets/desktop-closeup-original.png" alt=""><img id="blur-art" class="scene-art" src="assets/mobile-blur-clean.png" alt=""></div></div>
+ <button id="scene-action" aria-label="即刻营业，点击进入作品集"><span id="scene-hint">点击任意位置，即刻营业</span></button>
+ <div id="home-actions" hidden><button id="close-now">即刻歇业</button><button id="resume-watching">返回观看</button></div>
+ <div id="loading" role="status"><span></span><p>正在准备营业</p></div>
+ <section id="gallery" aria-label="作品展示" inert>
+  <header class="gallery-heading">
+   <button id="gallery-back" aria-label="返回店铺主页面"><img src="assets/back.svg" alt=""></button>
+   <div class="gallery-title"><span class="eyebrow">WORK SHOWCASE</span><h1>作品展示</h1></div>
+   <span id="project-count" aria-label="当前项目">01 / 04</span>
+  </header>
+  <div id="carousel" role="region" aria-roledescription="轮播" aria-label="项目卡片，左右滑动或使用方向键切换"></div>
+  <footer class="gallery-footer"><div id="project-dots" aria-label="选择项目"></div><span id="gallery-hint">滑动探索 · 点击展开</span></footer>
+ </section>
+ <section id="reader" aria-label="作品详情" hidden>
+  <div id="reader-scroll" tabindex="0"><div id="project-content"></div></div>
+  <header id="reader-header"><span id="reader-title"></span></header>
+  <div id="scroll-control" role="scrollbar" tabindex="0" aria-label="作品阅读进度" aria-controls="reader-scroll" aria-orientation="vertical" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="scroll-track"><div id="scroll-thumb"></div></div></div>
+ </section>
+ <button id="back-button" aria-label="返回作品卡片"><img src="assets/back.svg" alt=""></button>
+ <button id="reader-handle" aria-label="展开作品卡片栏，可左右拖动调整宽度" aria-expanded="false" aria-controls="gallery"><img id="handle-art" src="assets/sidebar-toggle.png" alt=""></button>
+ 
+ <button id="music-button" aria-label="开启音乐" aria-pressed="false"><img src="assets/music-off.svg" alt=""></button>
+ <div id="contact-actions"><button id="resume-button" aria-haspopup="dialog" aria-controls="resume-dialog">查看简历</button>
+ <button id="qr-button" aria-label="如何找到我？查看联系方式" aria-haspopup="dialog">如何找到我？</button></div>
+ <dialog id="qr-dialog" aria-labelledby="qr-title" aria-describedby="contact-intro">
+  <button id="qr-close" class="dialog-back" aria-label="返回感谢观看"><img src="assets/back.svg" alt=""></button><h2 id="qr-title">如何找到我？</h2>
+  <p id="contact-intro">欢迎交流设计、工作机会与项目合作。<br>微信扫码，或通过电话、邮箱联系我。</p>
+  <div class="qr-paper"><img src="assets/qr-original.jpg" width="456" height="458" alt="代睿的微信二维码"></div>
+  <dl class="contact-details">
+   <dt>电话</dt><dd><a href="tel:19194391317">19194391317</a></dd>
+   <dt>邮箱</dt><dd><a href="mailto:1132584596@qq.com">1132584596@qq.com</a></dd>
+  </dl>
+  <div class="qr-actions"><a href="assets/qr-original.jpg" download="代睿微信二维码.jpg">保存二维码</a></div>
+ </dialog>
+ <dialog id="resume-dialog" aria-labelledby="resume-title"><header><h2 id="resume-title">代睿 · 个人简历</h2><button id="resume-close" class="dialog-back" aria-label="返回感谢观看"><img src="assets/back.svg" alt=""></button></header><div class="resume-pages"><img id="resume-image" src="assets/resume-long.jpg" width="2551" height="4924" alt="代睿个人简历" decoding="sync"></div><footer><a href="assets/resume.pdf" target="_blank" rel="noopener">打开原始 PDF</a><a href="assets/resume.pdf" download="代睿求职简历.pdf">下载简历</a></footer></dialog>
+ <div id="node-layer" aria-hidden="true"></div><div id="live-status" class="sr-only" role="status" aria-live="polite"></div>
+ <audio id="music" src="assets/music.mp3" loop preload="none"></audio>
+</main>
+<script type="module" src="app.js"></script>
+</body></html>
