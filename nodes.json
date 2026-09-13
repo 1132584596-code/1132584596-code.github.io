@@ -248,14 +248,6 @@
     "group": "通用控件"
   },
   {
-    "id": "UI-06",
-    "name": "查看简历",
-    "stage": "closed",
-    "description": "仅感谢观看关门阶段出现：关门2秒后渐显，结束时完全显示。弹窗用返回图标退出。",
-    "group": "通用控件",
-    "figma": null
-  },
-  {
     "id": "D-UI-07",
     "name": "拉伸作品栏",
     "stage": "project-1",

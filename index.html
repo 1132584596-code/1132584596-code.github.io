@@ -36,7 +36,7 @@
  <button id="reader-handle" aria-label="展开作品卡片栏，可左右拖动调整宽度" aria-expanded="false" aria-controls="gallery"><img id="handle-art" src="assets/sidebar-toggle.png" alt=""></button>
  
  <button id="music-button" aria-label="开启音乐" aria-pressed="false"><img src="assets/music-off.svg" alt=""></button>
- <div id="contact-actions"><button id="resume-button" aria-haspopup="dialog" aria-controls="resume-dialog">查看简历</button>
+ <div id="contact-actions">
  <button id="qr-button" aria-label="如何找到我？查看联系方式" aria-haspopup="dialog">如何找到我？</button></div>
  <dialog id="qr-dialog" aria-labelledby="qr-title" aria-describedby="contact-intro">
   <button id="qr-close" class="dialog-back" aria-label="返回感谢观看"><img src="assets/back.svg" alt=""></button><h2 id="qr-title">如何找到我？</h2>
@@ -48,7 +48,6 @@
   </dl>
   <div class="qr-actions"><a href="assets/qr-original.jpg" download="代睿微信二维码.jpg">保存二维码</a></div>
  </dialog>
- <dialog id="resume-dialog" aria-labelledby="resume-title"><header><h2 id="resume-title">代睿 · 个人简历</h2><button id="resume-close" class="dialog-back" aria-label="返回感谢观看"><img src="assets/back.svg" alt=""></button></header><div class="resume-pages"><img id="resume-image" src="assets/resume-long.jpg" width="2551" height="4924" alt="代睿个人简历" decoding="sync"></div><footer><a href="assets/resume.pdf" target="_blank" rel="noopener">打开原始 PDF</a><a href="assets/resume.pdf" download="代睿求职简历.pdf">下载简历</a></footer></dialog>
  <div id="node-layer" aria-hidden="true"></div><div id="live-status" class="sr-only" role="status" aria-live="polite"></div>
  <audio id="music" src="assets/music.mp3" loop preload="none"></audio>
 </main>

@@ -107,20 +107,12 @@ body:not(.mobile) #app.sidebar-open #reader-header{padding-left:24px}
 #app[data-state=reading] #reader-hint{display:block}
 #gallery,#reader{touch-action:pan-y pinch-zoom}
 #app.resizing #gallery,#app.resizing #reader{transition:none;user-select:none}
-/* UI-06: resume above contact on desktop, contact left / resume right on mobile. */
+/* Contact actions. */
 #contact-actions{position:absolute;right:24px;bottom:24px;z-index:21;display:flex;flex-direction:column;align-items:stretch;gap:10px}
 #contact-actions button{position:static;display:block;min-height:44px;padding:10px 15px;background:#ffffffed;border:1px solid #ffffff80;border-radius:22px;box-shadow:0 3px 15px #0001;font-size:13px;backdrop-filter:blur(12px)}
 body.mobile #contact-actions{left:16px;right:16px;bottom:calc(18px + env(safe-area-inset-bottom));flex-direction:row;justify-content:space-between;align-items:center;gap:16px}
-body.mobile #qr-button{order:0}body.mobile #resume-button{order:1}
+body.mobile #qr-button{order:0}
 #app:is([data-state=loading],[data-state=opening],[data-state=pushing],[data-state=blurring],[data-state=reading],[data-state=expanding],[data-state=collapsing],[data-state=pullback],[data-state=closing]) #contact-actions{display:none}
-#resume-dialog{padding:0;border:0;border-radius:20px;width:min(900px,calc(100vw - 24px));height:calc(100svh - 32px);max-height:calc(100svh - 32px);background:#fff;color:#18291e;overflow:auto;overscroll-behavior:contain}
-#resume-dialog::backdrop{background:#10241d70;backdrop-filter:blur(8px)}
-#resume-dialog header{position:sticky;top:0;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;background:#fffffff2;backdrop-filter:blur(12px);border-bottom:1px solid #e8ece6;z-index:1}
-#resume-title{font-size:17px;margin:0}
-#resume-close{min-width:60px;min-height:44px;border-radius:12px;background:#edf2ea}
-.resume-pages img{display:block;width:100%;height:auto}
-#resume-dialog footer{display:flex;gap:12px;padding:16px;justify-content:center;flex-wrap:wrap}
-#resume-dialog footer a{display:flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border-radius:12px;background:#edf2ea;color:#23351f;text-decoration:none;font-size:14px}
 .qr-actions a,.qr-actions button{min-height:44px}
 
 /* Stable scenes already contain the exact board; avoid drawing its edge twice. */
@@ -165,8 +157,6 @@ body.mobile #home-actions{left:16px;right:16px;bottom:calc(18px + env(safe-area-
 .dialog-back img{display:block;width:36px;height:36px}
 #qr-close{position:absolute;left:12px;top:16px}
 #qr-title{padding:0 32px}
-#resume-dialog header{flex-direction:row-reverse}
-#resume-close{background:transparent}
 /* R8: supplied full-height sidebar contour; arrow remains vertically centered. */
 #reader-handle{--handle-width:clamp(44px,7.315svh,79px);width:var(--handle-width);height:100%;top:0;left:max(0px,calc(var(--sidebar-width,0px) - var(--handle-width)*.63));transform:none;border:0;border-radius:0;background:transparent;backdrop-filter:none;padding:0;box-shadow:none;overflow:visible}
 #reader-handle img{width:100%;height:100%;display:block;object-fit:fill;pointer-events:none}
@@ -187,8 +177,6 @@ body:not(.mobile) #scene-hint{left:50%;transform:translateX(-50%);bottom:24px;ma
 body.mobile #home-actions,body.mobile #contact-actions{bottom:calc(84px + env(safe-area-inset-bottom))}
 body.mobile #scene-hint{bottom:calc(84px + env(safe-area-inset-bottom))}
 body.mobile .gallery-footer{bottom:calc(84px + env(safe-area-inset-bottom))}
-#resume-dialog{width:min(1100px,94vw)}
-.resume-pages img{image-rendering:auto;max-width:100%;height:auto}
 
 /* R10: supplied desktop backgrounds now include 70px of sky; align every layer. */
 body:not(.mobile){--base-h:1150px;--door-top:396px;--door-bottom:1015px;--zoom-y:-718.58px}
@@ -224,12 +212,7 @@ body.mobile #music-button,body.mobile #back-button,body.mobile #gallery-back{pad
 .contact-details dd{font-size:17px;line-height:24px;margin:0}
 .contact-details dd+dt{margin-top:12px}
 .contact-details a{color:var(--ui-text)}
-.qr-actions a,#resume-dialog footer a{min-height:44px;padding:12px 16px;border-radius:12px;background:#f2f2f7;color:#1d1d1f;font-size:15px;font-weight:500;line-height:20px;text-decoration:none}
-#resume-dialog{border-radius:24px;max-height:calc(100svh - 32px)}
-#resume-dialog header{min-height:64px;gap:12px;padding:12px 16px}
-#resume-dialog h2{font-size:20px;font-weight:600;line-height:28px;margin:0}
-#resume-dialog footer{display:flex;flex-wrap:wrap;gap:12px;padding:16px}
-#resume-dialog footer a{flex:1;text-align:center;white-space:nowrap}
+.qr-actions a{min-height:44px;padding:12px 16px;border-radius:12px;background:#f2f2f7;color:#1d1d1f;font-size:15px;font-weight:500;line-height:20px;text-decoration:none}
 #reader-handle{--handle-width:clamp(44px,6.87svh,79px)}
 #gallery{container-type:inline-size}
 body:not(.mobile) .gallery-title h1{font-size:clamp(16px,5cqw,24px);font-weight:600;line-height:44px}
@@ -242,7 +225,7 @@ body:not(.mobile) #app.reading-layout .gallery-heading{left:12px;right:calc(20px
 body:not(.mobile) #app.reading-layout .gallery-title h1{font-size:clamp(14px,4cqw,24px)}
 #project-count{min-width:52px;overflow:visible}
 /* Dialog arrows remain plain, without added rings or instructional marks. */
-#qr-close,#resume-close,#qr-close:focus,#qr-close:focus-visible,#resume-close:focus,#resume-close:focus-visible{outline:none!important;box-shadow:none!important;border:0!important}
+#qr-close,#qr-close:focus,#qr-close:focus-visible{outline:none!important;box-shadow:none!important;border:0!important}
 /* Cover the last camera frames with the incoming artwork, before the old endpoint. */
 body:not(.mobile) #desktop-closeup-art{transition:opacity .9s cubic-bezier(.22,.61,.36,1)}
 body:not(.mobile) #app[data-state=pushing] #desktop-closeup-art{opacity:1;transition-delay:.2s}
