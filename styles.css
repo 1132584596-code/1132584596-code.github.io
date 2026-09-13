@@ -249,3 +249,7 @@ body.mobile #app:is([data-state=closing],[data-state=closed]) #scene-hint{left:1
 
 /* R15: keep the final facade fixed from return-home through shutter closure. */
 body:not(.mobile) #app.returned-shop:is([data-state=pullback],[data-state=open],[data-state=pushing],[data-state=closing]) #shell-art{display:block}
+
+/* Closing controls: one contact action, compact stack lowered together. */
+body.mobile #contact-actions{bottom:calc(64px + env(safe-area-inset-bottom))}
+body.mobile #app:is([data-state=closing],[data-state=closed]) #scene-hint{bottom:calc(114px + env(safe-area-inset-bottom))}
