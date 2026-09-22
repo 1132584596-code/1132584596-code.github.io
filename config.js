@@ -3,10 +3,11 @@ export const TIMING = Object.freeze({idleOpen:5000, shutterOpen:5000, idlePush:1
 export const VOLUME = 0.38;
 export const PROJECTS = [
  {id:'tmall',name:'天猫618',title:'天猫618项目',color:'#ffe773',desktop:'494:178',mobile:'494:193'},
- {id:'didi',name:'滴滴春日出行计划',title:'滴滴春日出行计划',color:'#f477e6',desktop:'494:45',mobile:'494:135'},
+ {id:'didi',mobileImage:'assets/didi-mobile-card-0922.webp',name:'滴滴春日出行计划',title:'滴滴春日出行计划',color:'#f477e6',desktop:'494:45',mobile:'494:135'},
  {id:'coffee',name:'啡趣不可',title:'啡趣不可项目',color:'#88eaff',desktop:'494:47',mobile:'494:136'},
  {id:'halliday',name:'Halliday',title:'Halliday项目',color:'#88eaff',desktop:'494:55',mobile:'494:159'},
+ {id:'baidu',name:'百度网盘',title:'百度网盘项目',color:'#b1a4ff',desktop:null,mobile:null},
 ];
-export function wrap(value,n=4){return ((value%n)+n)%n;}
-export function signedDistance(index,position){return wrap(index-position+2)-2;}
+export function wrap(value,n=PROJECTS.length){return ((value%n)+n)%n;}
+export function signedDistance(index,position){return wrap(index-position+PROJECTS.length/2)-PROJECTS.length/2;}
 export function canAutoSlide({state,hovering,dragging,lastAction},now){return state==='browse'&&!hovering&&!dragging&&now-lastAction>=TIMING.idleCarousel;}

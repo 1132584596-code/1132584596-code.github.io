@@ -286,5 +286,37 @@
     "group": "通用控件",
     "stage": "home",
     "figma": null
+  },
+  {
+    "id": "D-P5",
+    "name": "百度网盘 · 预览",
+    "figma": null,
+    "stage": "card-5",
+    "group": "作品卡片",
+    "description": "点击一次连续放大展开；手动滑动后吸附"
+  },
+  {
+    "id": "D-R5",
+    "name": "百度网盘 · 正文",
+    "figma": null,
+    "stage": "project-5",
+    "group": "作品阅读",
+    "description": "点击卡片展开正文；使用返回键退出作品阅读。"
+  },
+  {
+    "id": "M-P5",
+    "name": "百度网盘 · 预览",
+    "figma": null,
+    "stage": "card-5",
+    "group": "作品卡片",
+    "description": "点击一次连续放大展开；手动滑动后吸附"
+  },
+  {
+    "id": "M-R5",
+    "name": "百度网盘 · 正文",
+    "figma": null,
+    "stage": "project-5",
+    "group": "作品阅读",
+    "description": "点击卡片展开正文；使用返回键退出作品阅读。"
   }
 ]
